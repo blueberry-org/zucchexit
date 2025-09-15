@@ -197,7 +197,7 @@ function showExitTime() {
         let res_remainingTime;
         let res_timeOfExit;
 
-        if (frame.querySelector(`[id$='_Visualizzazionetimbrature_11_portlet_title_lbl_title_openclosetbl']`).innerText === 'Visualizzazione timbrature') {
+        if (frame.querySelector(`[id$='_11_portlet_title_lbl_title_openclosetbl']`).innerText === 'Visualizzazione timbrature') {
             res_remainingTime = 'Tempo residuo';
             res_timeOfExit = 'Orario di uscita';
 
