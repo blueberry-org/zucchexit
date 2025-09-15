@@ -16,7 +16,7 @@ function getExitTime() {
     let mainTable = frame.querySelector(`table[id$='_grid_timbrus']`);
 
     if (mainTable) {
-        let isItalian = frame.querySelector(`[id$='_Visualizzazionetimbrature_11_portlet_title_lbl_title_openclosetbl']`).innerText === 'Visualizzazione timbrature';
+        let isItalian = frame.querySelector(`[id$='_11_portlet_title_lbl_title_openclosetbl']`).innerText === 'Visualizzazione timbrature';
 
         let resLessThan30Min = isItalian ? 'Hai fatto {0} minuti di pausa pranzo.' : `You had a {0} minutes lunch break.`;
         let ressMoreThan1Hour = isItalian ? 'Hai fatto {0} minuti di pausa pranzo! Orario di uscita calcolato su 60 minuti di pausa ma saranno conteggiati {1} minuti di minor presenza.' :
@@ -197,7 +197,7 @@ function showExitTime() {
         let res_remainingTime;
         let res_timeOfExit;
 
-        if (frame.querySelector(`[id$='_Visualizzazionetimbrature_11_portlet_title_lbl_title_openclosetbl']`).innerText === 'Visualizzazione timbrature') {
+        if (frame.querySelector(`[id$='_11_portlet_title_lbl_title_openclosetbl']`).innerText === 'Visualizzazione timbrature') {
             res_remainingTime = 'Tempo residuo';
             res_timeOfExit = 'Orario di uscita';
 
